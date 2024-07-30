@@ -25,6 +25,32 @@
         font-family: "Playfair Display";
         letter-spacing: 5px;
       }
+      /* customize <a> tag styles */
+      a {
+        text-decoration: none;
+        color: #00a2ff;
+        cursor: pointer;
+      }
+
+      /* my css */
+      .my-img-size-1 {
+        max-width: 300px;
+      }
+
+      .my-img-size-2 {
+        max-width: 400px;
+      }
+
+      .my-float-left {
+        float: left;
+        padding-right: 20px;
+      }
+
+      .my-float-right {
+        float: right;
+        padding-left: 20px;
+      }
+
     </style>
   </head>
   <body>
@@ -120,41 +146,96 @@
       <!-- {% include about.html %} -->
       <!-- <h5 class="w3-center">Subheader</h5>
       <div class="about-container"></div> -->
-      <!-- About Section -->
-      <div class="w3-row w3-padding-64" id="about">
-        <div class="w3-col m6 w3-padding-large w3-hide-small">
-          <img
-            src="/w3images/tablesetting2.jpg"
-            class="w3-round w3-image w3-opacity-min"
-            alt="Table Setting"
-            width="600"
-            height="750"
-          />
-        </div>
 
-        <div class="w3-col m6 w3-padding-large">
+      <!-- About Section -->
+      <div class="w3-content" style="max-width: 1100px">
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
           <h1 class="w3-center">Who is Liang？</h1>
-          <br />
-          <h5 class="w3-center">Subheader</h5>
-          <p class="w3-large">
-            The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor
-            sit amet, consectetur adipiscing elit consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.We only use
-            <span class="w3-tag w3-light-grey">seasonal</span> ingredients.
-          </p>
-          <p class="w3-large w3-text-grey w3-hide-medium">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum consectetur adipiscing
-            elit, sed do eiusmod temporincididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+          <div class="w3-padding-large">
+            <h2>Intro 1</h2>
+            <p class="w3-large">
+              <!-- added float left and img size -->
+              <img
+                src="./src/img/selfphoto.png"
+                class="w3-round w3-image my-float-left my-img-size-1"
+                alt="self img"
+                style="width: 100%"
+              />
+              <!-- style="width: 100%" -->
+              Place Holder for Content - [Vegetables play an important role in human nutrition. Most are low
+              in fat and calories but are bulky and filling. They supply dietary
+              fiber and are important sources of essential vitamins, minerals, and
+              trace elements. Particularly important are the antioxidant vitamins
+              A, C, and E. When vegetables are included in the diet, there is
+              found to be a reduction in the incidence of cancer, stroke,
+              cardiovascular disease, and other chronic ailments. Research has
+              shown that, compared with individuals who eat less than three
+              servings of fruits and vegetables each day, those that eat more than
+              five servings have an approximately twenty percent lower risk of
+              developing coronary heart disease or stroke.]
+            </p>
+            <p class="w3-large">
+              Place Holder for Content - [Vegetables play an important role in human nutrition. Most are low
+              in fat and calories but are bulky and filling. They supply dietary
+              fiber and are important sources of essential vitamins, minerals, and
+              trace elements. Particularly important are the antioxidant vitamins
+              A, C, and E. When vegetables are included in the diet, there is
+              found to be a reduction in the incidence of cancer, stroke,
+              cardiovascular disease, and other chronic ailments. Research has
+              shown that, compared with individuals who eat less than three
+              servings of fruits and vegetables each day, those that eat more than
+              five servings have an approximately twenty percent lower risk of
+              developing coronary heart disease or stroke.]
+              <span
+                >Reference:
+                <a
+                  href="https://en.wikipedia.org/wiki/Vegetable"
+                  target="_blank"
+                  class="w3-hover-opacity"
+                  >https://en.wikipedia.org/wiki/Vegetable</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="w3-padding-large">
+            <h2>Intro 2</h2>
+            <p class="w3-large">
+              <img
+                src="./src/img/selfphoto_headshot.png"
+                class="w3-round w3-image my-float-right my-img-size-2"
+                alt="various types of vegetables"
+                style="width: 100%"
+              />
+              Place Holder for Content - [Vegetables play an important role in human nutrition. Most are low
+              in fat and calories but are bulky and filling. They supply dietary
+              fiber and are important sources of essential vitamins, minerals, and
+              trace elements. Particularly important are the antioxidant vitamins
+              A, C, and E.]
+            </p>
+            <p class="w3-large">
+              Place Holder for Content - [Vegetables play an important role in human nutrition. Most are low
+              in fat and calories but are bulky and filling. They supply dietary
+              fiber and are important sources of essential vitamins, minerals, and
+              trace elements. Particularly important are the antioxidant vitamins
+              A, C, and E. When vegetables are included in the diet, there is
+              found to be a reduction in the incidence of cancer, stroke,
+              cardiovascular disease, and other chronic ailments. Research has
+              shown that, compared with individuals who eat less than three
+              servings of fruits and vegetables each day, those that eat more than
+              five servings have an approximately twenty percent lower risk of
+              developing coronary heart disease or stroke.] <span
+              >Reference:
+              <a
+                href="https://en.wikipedia.org/wiki/Fruit"
+                target="_blank"
+                class="w3-hover-opacity"
+                >https://en.wikipedia.org/wiki/Fruit</a
+              ></span
+            >
+            </p>
+          </div>
         </div>
-      </div>
 
       <hr />
 
@@ -288,16 +369,7 @@
 
     <!-- Footer -->
     <footer class="w3-center w3-light-grey w3-padding-32">
-      <p>
-        Powered by
-        <a
-          href="https://www.w3schools.com/w3css/default.asp"
-          title="W3.CSS"
-          target="_blank"
-          class="w3-hover-text-green"
-          >w3.css</a
-        >
-      </p>
+      <p>@ Copy Right Reserved</p>
     </footer>
 
     <!-- <script>
